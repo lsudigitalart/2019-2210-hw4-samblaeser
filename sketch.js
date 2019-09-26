@@ -1,6 +1,8 @@
 function setup() {
     createCanvas(650,550);
 
+    
+
 }
 
 var score = 0
@@ -14,7 +16,13 @@ var cheeseD = 155
 function draw() {
 
   background(70, 140, 0); //so bg is constantly there
-  
+ 
+  //instructions
+  fill(98,45,45);
+  textSize(22);
+  textFont('Segoe Print');
+  text("The mouse is hungry. Use WASD to feed him!", 40, 545);
+
   //score
   fill(78,45,45);
   textSize(32);
