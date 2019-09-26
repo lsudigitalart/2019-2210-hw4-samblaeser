@@ -18,11 +18,13 @@ function draw() {
   //score
   fill(78,45,45);
   textSize(32);
+  textFont('Segoe Print');
   text(score, 320, 32);
 
   //bite director  
   fill(78,45,45);
   textSize(32);
+  textFont('Segoe Print');
   text("<-- yum yum", cheeseX+90, cheeseY+60);
 
 
@@ -43,8 +45,6 @@ if (keyIsPressed) {
 }
 
 
-
-
 // cheese triangle for show
    stroke("yellow");
    strokeWeight(2);    
@@ -62,9 +62,11 @@ if(dist(avatarX, avatarY, cheeseX, cheeseY)<127.5) {
   fill(70,140,0);
   stroke(70,140,0);
   circle(cheeseX+40, cheeseY+30, 60); //green bite
-    fill(78,45,45);
+    fill(130,45,85);
     textSize(50);
-    text("You fed the mouse! <:3", 100, 82);
+    textFont('Ink Free Regular');
+    textStyle(BOLD);
+    text("You fed the mouse! <:3", 70, 82);
   if (score == 0) {
     score = score + 100;
     
